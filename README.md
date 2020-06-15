@@ -1,0 +1,1 @@
+plot.py 3d_scalar_map res3d.slf -f=a -v="VELOCITY U"

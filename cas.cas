@@ -1,0 +1,101 @@
+/---------------------------------------------------------------------
+/ TELEMAC3D Version v7p1 11-Feb-2016
+/ nom inconnu
+/---------------------------------------------------------------------
+
+
+
+/---------------------------------------------------------------------
+/ EQUATIONS
+/---------------------------------------------------------------------
+
+LAW OF BOTTOM FRICTION                            =3
+
+HORIZONTAL TURBULENCE MODEL                       =1
+
+FRICTION COEFFICIENT FOR THE BOTTOM               =60
+
+FRICTION COEFFICIENT FOR LATERAL SOLID BOUNDARIES =60
+
+PARALLEL PROCESSORS                               =1
+
+VERTICAL TURBULENCE MODEL                         =1
+
+
+/---------------------------------------------------------------------
+/ EQUATIONS, INITIAL CONDITIONS
+/---------------------------------------------------------------------
+
+INITIAL CONDITIONS ='CONSTANT ELEVATION'
+
+INITIAL ELEVATION  =3
+
+
+/---------------------------------------------------------------------
+/ INPUT-OUTPUT, FILES
+/---------------------------------------------------------------------
+
+/FORMATTED RESULTS FILE   ='respower.txt'
+
+STEERING FILE            ='cas.cas'
+
+FORMATTED DATA FILE 1    ='TEC_positions.v0p1.txt'
+FORMATTED DATA FILE 2    ='newEPTM.csv'
+
+GEOMETRY FILE            ='geo.slf'
+
+3D RESULT FILE           ='res3d.slf'
+
+2D RESULT FILE           ='res2d.slf'
+
+LIQUID BOUNDARIES FILE   ='lqd.lqd'
+
+FORTRAN FILE             ='dev/source'
+
+BOUNDARY CONDITIONS FILE ='geo.cli'
+
+/DEBUGGER=1
+/---------------------------------------------------------------------
+/ INPUT-OUTPUT, GRAPHICS AND LISTING
+/---------------------------------------------------------------------
+
+LISTING PRINTOUT PERIOD =10
+GRAPHIC PRINTOUT PERIOD =10
+
+
+/---------------------------------------------------------------------
+/ NUMERIC PARAMETERS
+/---------------------------------------------------------------------
+
+NUMBER OF HORIZONTAL LEVELS =21
+
+
+
+
+/---------------------------------------------------------------------
+/ NUMERICAL PARAMETERS
+/---------------------------------------------------------------------
+
+PRESCRIBED ELEVATIONS =3;0
+
+MESH TRANSFORMATION   =1
+
+TIME STEP             =1.0
+
+NUMBER OF TIME STEPS  =10
+
+PRESCRIBED FLOWRATES  =0.0;0.0
+
+ACCURACY FOR PPE = 1.E-4
+ACCURACY FOR PROPAGATION = 1.E-4
+
+
+/---------------------------------------------------------------------
+/ NUMERICAL PARAMETERS, VELOCITY-CELERITY-HAUTEUR
+/---------------------------------------------------------------------
+
+MINIMAL VALUE FOR DEPTH =0.0001
+
+NUMBER OF PRIVATE ARRAYS = 1
+/NAMES OF PRIVATE VARIABLES ='Turbine'
+VARIABLES FOR 3D GRAPHIC PRINTOUTS = 'Z,U,V,W,P1'

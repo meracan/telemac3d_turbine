@@ -1,0 +1,8 @@
+# Rainy River Project
+#
+#Time	WhiteMRiver	Powerhouse	Lake Level
+T	SL(1)	Q(2)
+s	m	m3/s
+0	3	30
+60.0	3 30
+999999.0	3 30
